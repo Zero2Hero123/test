@@ -1,5 +1,9 @@
-def greet(name):
+from Human import Human
 
-  print(f"Hello, {name}")
+me = Human("Hero",15)
 
-greet("Hero")
+def greet(human_obj: Human):
+
+  print(f"Hello, {human_obj.name}")
+
+greet(me)
